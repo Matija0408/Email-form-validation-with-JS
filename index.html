@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   <title>Email validation</title>
 </head>
 
@@ -16,12 +18,12 @@
     <form class="form" action="">
       <div class="form-control">
         <label for="username" name="username">User Name</label>
-        <input type="text" name="username">
+        <input id="username" type="text" name="username">
       </div>
       <div class="form-control">
         <label for="email" name="email">Email</label>
-        <input type="text" name="email">
-        <small></small>
+        <input id="email" type="email" name="email" value="msekelj@gmail.com">
+        <small id="emailNote"></small>
       </div>
       <div class="form-control">
         <label for="password" name="password">Password</label>
@@ -29,9 +31,12 @@
         <small></small>
       </div>
       <div class="form-control">
-        <label for="conpwd" name="conpwd">Confirm Password</label>
+        <label for=" conpwd" name="conpwd">Confirm Password</label>
         <input type="password" name="conpwd">
         <small></small>
+      </div>
+      <div class="form-control">
+        <button type="button" onclick="validate()">Register</button>
       </div>
     </form>
   </section>
